@@ -6,7 +6,33 @@
 
 # there are two nice ways to install bioinformatics softwares using conda
 
-# STEP 1: CREATE ENVIRONMENT AND INSTALL PACKAGES SIMULTANEOUSLY
+----------------------------
+
+# STEP 1: CREATE ENVIRONMENT SEPARATELY & INSTALL PACKAGES SEPARATELY
+
+# create an environment 
+
+conda create -n <name_of_env>
+
+# then activate environment before installing packages in it
+
+conda activate <name_of_env>
+
+# then install the software package
+
+conda install samtools
+
+# alternatively, you do not need to activate the environment before installing software packages
+# you can specify the name of the environment and conda will install the packages in the env
+
+conda install -n <name_of_env> bcftools samtools
+
+# however, you must reactivate the environment before running the softwares installed
+
+
+-------------------------
+
+# STEP 2: CREATE ENVIRONMENT AND INSTALL PACKAGES SIMULTANEOUSLY
 
 # conda create -n <name_of_environment> <name_of_software>
 # e.g.
@@ -20,7 +46,10 @@ conda create -n Bioinformatics samtools
 
 conda create -n Bioinformatics samtools python bcftools
 
-# STEP 2: INSTALL PACKAGES FROM AN environment.yml FILE
+-------------------------
+
+
+# STEP 3: INSTALL PACKAGES FROM AN environment.yml FILE
 
 # this works best if you have a lot of packages to install
 # you can also specify the version of the software
@@ -49,6 +78,10 @@ dependencies:
 # to then run the environment.yml file
 
 conda env create -f environment.yml
+
+# you can check the list of environments 
+
+conda env list
 
 
 
