@@ -108,3 +108,23 @@ rm -rf ~/miniconda
 # optional - but you can remove hidden conda files with 
 
 rm -rf ~/.condarc ~/.conda ~/.continuum
+
+----------------------------------------------
+
+# CREATION OF CHANNELS
+
+# channels act as repositories for conda, where softwares are installed and made available
+# two channels are used
+
+conda config --add channels conda-forge
+
+conda config --add channels bioconda
+
+# to confirm that the channels have been created
+
+conda config --show channels
+
+
+
+
+
