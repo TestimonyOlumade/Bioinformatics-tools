@@ -18,7 +18,7 @@
 
 --------------------------------------------
 
-# INSTALLING ANACONDA / MINICONDA
+# INSTALLING ANACONDA / MINICONDA on MacOS
 
 # Documentation
 
