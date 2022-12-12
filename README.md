@@ -1,1 +1,1 @@
-# This repository contains instructions and links to download major bioinformatics tools 
+This repository contains instructions and links to download major bioinformatics tools 
