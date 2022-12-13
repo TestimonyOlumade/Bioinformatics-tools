@@ -22,6 +22,11 @@ conda activate <name_of_env>
 
 conda install samtools
 
+
+
+
+---------------
+
 # alternatively, you do not need to activate the environment before installing software packages
 # you can specify the name of the environment and conda will install the packages in the env
 
@@ -29,8 +34,10 @@ conda install -n <name_of_env> bcftools samtools
 
 # however, you must reactivate the environment before running the softwares installed
 
-
 -------------------------
+
+
+
 
 # STEP 2: CREATE ENVIRONMENT AND INSTALL PACKAGES SIMULTANEOUSLY
 
