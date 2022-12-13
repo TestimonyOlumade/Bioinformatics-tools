@@ -18,6 +18,44 @@
 
 --------------------------------------------
 
+# INSTALLING IN SILENT MODE
+
+# The following instructions are for Miniconda. For Anaconda, substitute 'Anaconda' for 'Miniconda' 
+# in all of the commands.
+# you will need to specify the -b and -p arguments of the bash installer
+# -b - Batch mode with no PATH modifications to shell scripts. Assumes that you agree to the license agreement. 
+# Does not edit shell scripts such as .bashrc, .bash_profile, .zshrc, etc.
+# -p - installation prefix/path
+# -f - force installation even if -p already exists
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
+
+bash ~/miniconda.sh -b -p $HOME/miniconda
+
+# The installer prompts “Do you wish the installer to initialize Miniconda3 by running "conda init?" 
+# We recommend “yes”.
+
+# In order to initialize after the installation process is done, first run
+
+source <path to conda>/bin/activate
+
+# Then run
+
+
+conda init
+
+# or 
+
+conda init zsh 
+
+# for macOS Catalina (and later)
+
+
+
+
+
+# IN DETAILS
+------------------------------------
 # INSTALLING ANACONDA / MINICONDA on MacOS
 
 # Documentation
@@ -56,40 +94,6 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 conda list
 
 # the command above returns a list of installed packages if it has been installed correctly
-
-------------------------------
-
-# INSTALLING IN SILENT MODE
-
-# The following instructions are for Miniconda. For Anaconda, substitute 'Anaconda' for 'Miniconda' 
-# in all of the commands.
-# you will need to specify the -b and -p arguments of the bash installer
-# -b - Batch mode with no PATH modifications to shell scripts. Assumes that you agree to the license agreement. 
-# Does not edit shell scripts such as .bashrc, .bash_profile, .zshrc, etc.
-# -p - installation prefix/path
-# -f - force installation even if -p already exists
-
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
-
-bash ~/miniconda.sh -b -p $HOME/miniconda
-
-# The installer prompts “Do you wish the installer to initialize Miniconda3 by running "conda init?" 
-# We recommend “yes”.
-
-# In order to initialize after the installation process is done, first run
-
-source <path to conda>/bin/activate
-
-# Then run
-
-
-conda init
-
-# or 
-
-conda init zsh 
-
-# for macOS Catalina (and later)
 
 -------------------------------------------------
 
